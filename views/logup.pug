@@ -1,0 +1,14 @@
+html
+  head
+    title zzc
+  body
+    form(method="POST", action="/user/singup")
+      p 注册
+      .modle-body
+        label(for="wodehm") 用户名
+        input#wodehm(name="user[name]", type="text")
+      .modle-body
+        label(for="wodehma") 密码
+        input#wodehma(name="user[password]", type="text")
+      .modle-footer
+        button(type="submit") 注册

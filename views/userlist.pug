@@ -1,0 +1,16 @@
+html
+  head
+    title userList
+  body
+    table
+      thead
+        tr
+          th 名字
+          th 时间
+          th 密码
+      tbody
+        each item in users
+          tr
+            td #{item.name}
+            td #{moment(item.meta.updateAt).format('MM/DD/YYYY')}
+            td #{item.password}
